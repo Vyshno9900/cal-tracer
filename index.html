@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vyshno Calorie Tracker 🍎</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Vyshno Calorie Tracker 🍎</h1>
-
-  <textarea id="prompt" placeholder="Enter your food / calorie query..."></textarea>
-  <br>
-  <button onclick="sendPrompt()">Ask Gemini</button>
-
-  <pre id="output"></pre>
-
+  <div class="container">
+    <h1>Vyshno Calorie Tracker 🍎</h1>
+    <input id="foodInput" type="text" placeholder="Enter food (e.g., 2 bananas, 1 cup rice)" />
+    <button onclick="askGemini()">Ask Gemini</button>
+    <div id="responseBox">Waiting for input...</div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
